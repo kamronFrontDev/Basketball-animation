@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(https://img.freepik.com/free-vector/basketball-court-with-wooden-floor-scoreboard-ceiling-empty-fan-sector-seats-cartoon_33099-921.jpg)
+    no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.player {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    width: 600px;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes ball {
+    0% {
+    left: 60%;
+    top: 25%;
+    transform: scale(1);
+    }
+    50% {
+    left: 30%;
+    top: 10%;
+    transform: scale(1.1);
+    }
+    100% {
+    left: 10%;
+    top: 155px;
+    transform: scale(1.3) rotate(-430deg);
+    }
+}
